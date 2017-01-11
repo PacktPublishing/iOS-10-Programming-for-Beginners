@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="MessageApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8z-bi-aJH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FMl-wN-dbR">
+                                    <size key="itemSize" width="300" height="97"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="restaurantCell" id="DeX-f9-NfM" customClass="RestaurantMessageCell" customModule="MessageApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="restaurant-list-img" translatesAutoresizingMaskIntoConstraints="NO" id="f0k-il-zvn">
+                                                    <rect key="frame" x="8" y="9" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="GwL-aW-TTJ"/>
+                                                        <constraint firstAttribute="width" constant="60" id="tBj-aD-wV8"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxn-Qq-Sdo">
+                                                    <rect key="frame" x="76" y="10" width="236" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="fA4-x4-v5G"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEl-F7-AX4">
+                                                    <rect key="frame" x="76" y="35" width="236" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="rrW-ya-Bla"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSc-Zb-tvn">
+                                                    <rect key="frame" x="76" y="53" width="236" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="qcQ-vB-hac"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="zSc-Zb-tvn" firstAttribute="top" secondItem="lEl-F7-AX4" secondAttribute="bottom" constant="2" id="3wv-Wj-7Nh"/>
+                                            <constraint firstItem="lEl-F7-AX4" firstAttribute="top" secondItem="rxn-Qq-Sdo" secondAttribute="bottom" constant="4" id="56F-QV-JvR"/>
+                                            <constraint firstItem="lEl-F7-AX4" firstAttribute="leading" secondItem="f0k-il-zvn" secondAttribute="trailing" constant="8" id="5M6-wI-RnM"/>
+                                            <constraint firstItem="rxn-Qq-Sdo" firstAttribute="leading" secondItem="f0k-il-zvn" secondAttribute="trailing" constant="8" id="6vs-Uw-adv"/>
+                                            <constraint firstAttribute="trailing" secondItem="rxn-Qq-Sdo" secondAttribute="trailing" constant="8" id="B6b-YZ-rgx"/>
+                                            <constraint firstAttribute="trailing" secondItem="zSc-Zb-tvn" secondAttribute="trailing" constant="8" id="FRF-Mp-CoP"/>
+                                            <constraint firstItem="rxn-Qq-Sdo" firstAttribute="top" secondItem="DeX-f9-NfM" secondAttribute="top" constant="10" id="G8j-vs-q2V"/>
+                                            <constraint firstItem="zSc-Zb-tvn" firstAttribute="leading" secondItem="f0k-il-zvn" secondAttribute="trailing" constant="8" id="fvR-Cw-kFK"/>
+                                            <constraint firstItem="f0k-il-zvn" firstAttribute="top" secondItem="DeX-f9-NfM" secondAttribute="top" constant="9" id="hk7-R8-3fL"/>
+                                            <constraint firstItem="f0k-il-zvn" firstAttribute="leading" secondItem="DeX-f9-NfM" secondAttribute="leading" constant="8" id="ocz-rD-zqf"/>
+                                            <constraint firstAttribute="trailing" secondItem="lEl-F7-AX4" secondAttribute="trailing" constant="8" id="yQ8-Vb-5oe"/>
+                                        </constraints>
+                                        <size key="customSize" width="320" height="78"/>
+                                        <connections>
+                                            <outlet property="lblCity" destination="lEl-F7-AX4" id="tFo-1u-iKG"/>
+                                            <outlet property="lblCuisine" destination="zSc-Zb-tvn" id="1th-zX-YA0"/>
+                                            <outlet property="lblTitle" destination="rxn-Qq-Sdo" id="9Ty-Ay-exg"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D8z-bi-aJH" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="Q70-W5-IbM"/>
+                            <constraint firstItem="D8z-bi-aJH" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" id="akh-ju-liW"/>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="D8z-bi-aJH" secondAttribute="bottom" id="bCv-s0-QFQ"/>
+                            <constraint firstAttribute="trailing" secondItem="D8z-bi-aJH" secondAttribute="trailing" id="te8-He-Q60"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="528"/>
+                    <connections>
+                        <outlet property="collectionView" destination="D8z-bi-aJH" id="IZR-A6-HcG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-35.200000000000003" y="121.4392803598201"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="restaurant-list-img" width="82" height="82"/>
+    </resources>
+</document>
